@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- Normalize Style -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!-- master style -->
+    <link rel="stylesheet" href="CSS/master.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <style>
+            /* Loading Animation Styles */
+            .load {
+                display: flex;
+                justify-content: center;
+                margin: 50px auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+    
+            .load div {
+                width: 20px;
+                height: 20px;
+                background-color: orchid;
+                border-radius: 50%;
+                margin: 0 5px;
+                animation: up-and-down 0.9s infinite alternate;
+            }
+    
+            .load .two {
+                animation-delay: 0.3s;
+            }
+    
+            .load .three {
+                animation-delay: 0.6s;
+            }
+    
+            @keyframes up-and-down {
+                to {
+                    opacity: 0.2;
+                    transform: translateY(-10px);
+                }
+            }
+    
+            /* Hide the loader once the page is loaded */
+            body.loaded .load {
+                display: none;
+            }
+    
+            body.loaded {
+                overflow-y: auto;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!-- Loading Animation -->
+        <div class="load">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+<!-- Start Header -->
+<div class="header">
+    <div class="container">
+      <img decoding="async" class="logo" src="images/logo.png" alt="Logo" />
+      <div class="social-media">
+        <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="links">
+        <span class="icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End Header -->
+  
+    <!-- Start Landing Section -->
+    <div class="landing">
+        <div class="intro-text">
+            <h1>Ahmed Basem</h1>
+            <p>Your Road To Embedded System & Web Development</p>
+        </div>
+    </div>
+    <!-- End Landing Section -->
+    <!-- Start Features -->
+    <div class="features">
+        <div class="container">
+            <div class="feat">
+                <i class="fas fa-magic fa-3x"></i>
+                <h3>Tell Us Your Idea</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
+            </div>
+            <div class="feat">
+                <i class="far fa-gem fa-3x"></i>
+                <h3>We Will Do All The Work</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
+            </div>
+            <div class="feat">
+                <i class="fas fa-globe-asia fa-3x"></i>
+                <h3>Your Product is Worldwide</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
+            </div>
+        </div>
+    </div>
+    <!-- End F  eatures -->
+    <!-- Start Services -->
+    <div class="services" id="services">
+        <div class="container">
+            <h2 class="special-heading">Services</h2>
+            <p>Don't be busy, be productive</p>
+            <div class="services-content">
+                <div class="col">
+                    <!-- Start Service -->
+                    <div class="srv">
+                        <i class="fas fa-globe-asia fa-2x"></i>
+                        <div class="text">
+                            <h3>Embedded System</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, harum minima maiores accusantium corrupti adipisci veniam sapiente delectus 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="srv">
+                        <i class="fab fa-sketch fa-2x"></i>
+                        <div class="text">
+                            <h3>IOT</h3>
+                            <p>
+                                Process of enhancing user satisfaction with a product by improving the usability,
+                                accessibility, and
+                                pleasure provided in the interaction.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Service -->
+                </div>
+                <div class="col">
+                    <!-- Start Services -->
+                    <div class="srv">
+                        <i class="fas fa-vector-square fa-2x"></i>
+                        <div class="text">
+                            <h3>Web Design</h3>
+                            <p>
+                                Web design encompasses many different skills and disciplines in the production and
+                                maintenance of
+                                websites.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="srv">
+                        <i class="fas fa-pencil-ruler fa-2x"></i>
+                        <div class="text">
+                            <h3>Web Development</h3>
+                            <p>
+                                Web development is a broad term for the work involved in developing a web site for the
+                                Internet or an
+                                intranet.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Services -->
+                </div>
+                <div class="col">
+                    <div class="image image-column">
+                        <img decoding="async" src="images/Embedded Systems and IoT.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Services -->
+    <!-- Start Portfolio -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="special-heading">Portfolio</h2>
+            <p>If you do it right, it will last forever.</p>
+            <div class="portfolio-content">
+                <div class="card">
+                    <img decoding="async" src="images/51Fe-vXXelL._AC_UF1000,1000_QL80_.jpg" alt="" />
+                    <div class="info">
+                        <h3>OTTO Bot</h3>
+                        <p>My creative ability is very difficult to measure because it can manifest in so many
+                            surprising and.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img decoding="async" src="images/0J7541.1200.jpg" alt="" />
+                    <div class="info">
+                        <h3>Line Follower</h3>
+                        <p>My creative ability is very difficult to measure because it can manifest in so many
+                            surprising and.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img decoding="async" src="images/6366400604053120002742.jpg" alt="" />
+                    <div class="info">
+                        <h3>Micro Mouse</h3>
+                        <p>My creative ability is very difficult to measure because it can manifest in so many
+                            surprising and.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Portfolio -->
+    <!-- Start About -->
+    <div class="about">
+        <div class="container">
+            <h2 class="special-heading">About</h2>
+            <p>Less is more work</p>
+            <div class="about-content">
+                <div class="image">
+                    <img decoding="async" src="images/about.jpg" alt="" />
+                </div>
+                <div class="text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nemo neque voluptate tempora
+                        velit cum non,
+                        fuga vitae architecto delectus sed maxime rerum impedit aliquam obcaecati, aut excepturi iusto
+                        laudantium!
+                    </p>
+                    <hr />
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, sapiente. Velit iure
+                        exercitationem
+                        dolores nesciunt dolore. Eum officiis dolorum hic voluptate quaerat minima, similique inventore
+                        esse,
+                        alias, sed quo officia?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+    <!-- Start Contact -->
+    <div class="contact">
+        <div class="container">
+            <h2 class="special-heading">Contact</h2>
+            <p>We are born to create</p>
+            <div class="info">
+                <p class="label">Feel free to drop us a line at:</p>
+                <a href="mailto:Basem010104@gmail.com?subject=Contact" class="link">basem010104@gmail.com</a>
+                <div class="social">
+                    Find Us On Social Networks
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+    <div class="footer">&copy; 2024 <span>BS1</span> All Right Reserved</div>
+    <!-- End Footer -->
+         <!-- JavaScript to remove loader -->
+    <script>
+        window.addEventListener("load", function () {
+            document.body.classList.add("loaded");
+        });
+    </script>
+</body>
+
+</html>
